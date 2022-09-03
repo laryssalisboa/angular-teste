@@ -1,0 +1,19 @@
+<h1>LisboaApp</h1>
+<hr/>
+  <h2>
+    Nome: <u>{{name}}</u>
+  </h2>
+  <h3>
+    Idade: <u>{{ getIdade() }} anos</u>
+  </h3>
+
+  <hr/>
+  <h2>Contador: {{ counter }}s</h2>
+
+  <h3>{{ getMinutos() }}'{{ getSegundos() }} </h3>
+  <hr/>
+  <div *ngIf="let n of getNumbers()">
+ {{n}}:
+ <span> *ngIf="n % 2 == 0">PAR</span>
+ <span> *ngIf="n % 2 != 0">ÍMPAR</span>
+  </div>
