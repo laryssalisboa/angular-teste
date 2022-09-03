@@ -12,8 +12,8 @@
 
   <h3>{{ getMinutos() }}'{{ getSegundos() }} </h3>
   <hr/>
-  <div *ngIf="let n of getNumbers()">
- {{n}}:
+  <div *ngIf="let n of [25, 3, 7, 13, 19, 35, 42]">
+   {{ n }}:
  <span> *ngIf="n % 2 == 0">PAR</span>
  <span> *ngIf="n % 2 != 0">ÍMPAR</span>
   </div>
